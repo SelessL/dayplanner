@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
-    
+ 
   </head>
 
   <body>
@@ -93,6 +93,14 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+      const today = moment()
+      var dateElement= document.getElementById("currentDay");
+      dateElement.innerHTML = today;
+      $("#currentDay").append(dateElement);
+      console.log(moment());
+
+    </script>
   </body>
 </html>
