@@ -5,7 +5,7 @@ body {
 }
 
 textarea{
-  background: transparent;
+  background: rgb(206, 204, 204);
   border: none;
   resize: none;
   color: #000000;
@@ -74,7 +74,3 @@ textarea{
   overflow: auto;
 }
 
-.typebox {
-  background-color: #979393;
-  color: rgb(8, 8, 8);
-}

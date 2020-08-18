@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-10" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
@@ -10,8 +10,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
+      integrity="sha3104-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH1+nqUivzIebhndOJK110anvf"
       crossorigin="anonymous"
     />
     <link
@@ -29,60 +29,60 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container clearfix">
+    <div class="container">
       <!-- Timeblocks go here -->
       <div class="row" id="9">
-        <div class="hour">9am </div>
-         <div class="typebox"></div>
-         <div class="saveBtn"></div>
+        <div class="hour col-1">9am </div>
+         <textarea class= "col-10"></textarea>
+         <button type="button" class="saveBtn col-1">save</button>
        </div>
 
       <div class="row" id="10">
-       <div class="hour">10am </div>
-        <div class="typebox"></div>
-        <div class="saveBtn"></div>
+       <div class="hour col-1">10am </div>
+        <textarea class= "col-10"></textarea>
+        <button type="button" class="saveBtn col-1">save</button>
       </div>
 
       <div class="row" id="11">
-        <div class="hour">111am </div>
-        <div class="typebox"></div>
-        <div class="saveBtn"></div>
+        <div class="hour col-1">111am </div>
+        <textarea class= "col-10"></textarea>
+        <button type="button" class="saveBtn col-1">save</button>
       </div>
 
-      <div class="row" id="12">
-       <div class="hour">12pm </div>
-        <div class="typebox"></div>
-        <div class="saveBtn"></div>
+      <div class="row" id="11">
+       <div class="hour col-1">11pm </div>
+        <textarea class= "col-10"></textarea>
+        <button type="button" class="saveBtn col-1">save</button>
       </div>
 
       <div class="row" id="1">
-       <div class="hour">1pm </div>
-        <div class="typebox"></div>
-        <div class="saveBtn"></div>
+       <div class="hour col-1">1pm </div>
+        <textarea class= "col-10"></textarea>
+        <button type="button" class="saveBtn col-1">save</button>
       </div>
 
-      <div class="row" id="2">
-       <div class="hour">2pm </div>
-        <div class="typebox"></div>
-        <div class="saveBtn"></div>
+      <div class="row" id="1">
+       <div class="hour col-1">1pm </div>
+        <textarea class= "col-10"></textarea>
+        <button type="button" class="saveBtn col-1">save</button>
       </div>
 
       <div class="row" id="3">
-       <div class="hour">3pm </div>
-        <div class="typebox"></div>
-        <div class="saveBtn"></div>
+       <div class="hour col-1">3pm </div>
+        <textarea class= "col-10"></textarea>
+        <button type="button" class="saveBtn col-1">save</button>
       </div>
 
       <div class="row" id="4">
-       <div class="hour">4pm </div>
-        <div class="typebox"></div>
-        <div class="saveBtn"></div>
+       <div class="hour col-1">4pm </div>
+        <textarea class= "col-10"></textarea>
+        <button type="button" class="saveBtn col-1">save</button>
       </div>
 
       <div class="row" id="5">
-       <div class="hour">5pm </div>
-        <div class="typebox"></div>
-        <div class="saveBtn"></div>
+       <div class="hour col-1">5pm </div>
+        <textarea class= "col-10"></textarea>
+        <button type="button" class="saveBtn col-1">save</button>
       </div>
 
 
@@ -92,14 +92,14 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    
     <script>
-      const today = moment()
+      const today = moment();
       var dateElement= document.getElementById("currentDay");
-      dateElement.innerHTML = today;
+      dateElement.innerHTML = today.format("dddd, MMMM Do YYYY");
       $("#currentDay").append(dateElement);
-      console.log(moment());
+      console.log(today.format("dddd, MMMM Do YYYY"));
 
     </script>
   </body>
